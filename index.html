@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Warrior</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">⚔</span>
+          <span>Math Warrior</span>
+        </div>
+        <button id="restartBtn" class="secondary-btn hidden">Restart</button>
+      </header>
+
+      <main class="game-layout">
+        <section class="battle-panel">
+          <div class="status-card">
+            <div class="fighter player">
+              <div class="fighter-header">
+                <span>Hero</span>
+                <span id="playerLevel">Lv. 1</span>
+              </div>
+              <div class="hp-bar">
+                <div id="playerHpFill" class="hp-fill player-fill"></div>
+              </div>
+              <div class="hp-text"><span id="playerHp">100</span> / 100</div>
+            </div>
+
+            <div class="versus">VS</div>
+
+            <div class="fighter enemy">
+              <div class="fighter-header">
+                <span id="enemyName">Goblin</span>
+                <span id="enemyLevel">Lv. 1</span>
+              </div>
+              <div class="hp-bar enemy-bar">
+                <div id="enemyHpFill" class="hp-fill enemy-fill"></div>
+              </div>
+              <div class="hp-text"><span id="enemyHp">30</span> / 30</div>
+            </div>
+          </div>
+
+          <div class="battle-log" id="battleLog">
+            The arena trembles. Ready your mind and sword.
+          </div>
+        </section>
+
+        <section class="question-panel">
+          <div class="question-header">
+            <span class="badge">Battle Challenge</span>
+            <span id="scoreLabel">Score: 0</span>
+          </div>
+
+          <div class="equation-wrap">
+            <div id="equation" class="equation">8 + 7</div>
+          </div>
+
+          <div id="answers" class="answers" aria-label="Answer choices"></div>
+
+          <div class="controls">
+            <button id="startBtn" class="primary-btn">Start Battle</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
